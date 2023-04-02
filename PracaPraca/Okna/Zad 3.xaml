@@ -1,0 +1,43 @@
+﻿<Window x:Class="PracaPraca.Okna.Zad_3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracaPraca.Okna"
+        mc:Ignorable="d"
+        Title="Zad_3" Height="450" Width="800">
+    <DockPanel Background="LightBlue">
+
+        <TextBlock FontSize="50" FontWeight="Bold" Foreground="Red"
+HorizontalAlignment="Center" VerticalAlignment="Center"
+ Height="100" DockPanel.Dock="Top"
+>Lepsze jest wrogiem dobrego!</TextBlock>
+
+
+        <TextBlock FontSize="14" Background="Azure" Foreground="DarkViolet"
+ HorizontalAlignment="Right" VerticalAlignment="Center"
+ Height="20" DockPanel.Dock="Bottom" Padding="10,0"
+>Zalogowany użytkownik: Jan Kowalski</TextBlock>
+
+
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" MinWidth="100" />
+                <ColumnDefinition Width="3*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Orientation="Vertical">
+                <Button Background="AliceBlue" Height="40" Margin="5">Strona główna</Button>
+                <Button Background="AliceBlue" Height="40" Margin="5">Lista maszyn</Button>
+                <Button Background="AliceBlue" Height="40" Margin="5">Lista kontrahentów</Button>
+                <Button Background="AliceBlue" Height="40" Margin="5">Dane pracowników</Button>
+            </StackPanel>
+
+            <TextBlock Grid.Row="1" Grid.Column="1" Background="Bisque"></TextBlock>
+
+            <GridSplitter Grid.Column="1" Width="5" Background="DarkViolet"
+ HorizontalAlignment="Left" ></GridSplitter>
+
+        </Grid>
+    </DockPanel>
+</Window>
